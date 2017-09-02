@@ -1,8 +1,7 @@
 {
   "name": "@albavulpes/data-abstraction-layer",
   "description": "Data Abstraction Layer for Alba Vulpes API",
-  "version": "0.0.2",
-  "private": true,
+  "version": "0.0.3",
   "copyright": "Copyright © 2017",
   "author": {
     "name": "cypherix93",
@@ -18,9 +17,16 @@
   "files": [
     "dist/"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "remove": "^0.1.5",
+    "superagent": "^3.6.0",
+    "superagent-prefix": "^0.0.2",
+    "superagent-use": "^0.1.0"
+  },
   "devDependencies": {
     "@types/node": "^8.0.3",
+    "@types/superagent": "^3.5.5",
+    "@types/superagent-prefix": "^0.0.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cached": "^1.1.1",

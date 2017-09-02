@@ -1,0 +1,50 @@
+{
+  "name": "@egifter/egapi",
+  "version": "0.2.1",
+  "author": "eGifter",
+  "description": "ts integration logic around eGAPI project",
+  "homepage": "https://github.com/eGifter/eg-ts-modules#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eGifter/eg-ts-modules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eGifter/eg-ts-modules/issues"
+  },
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-run": "^1.7.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-typescript": "^3.1.7",
+    "gulp-watch": "^4.3.11",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.3.4"
+  },
+  "publishConfig": {
+    "registry": "http://proget.egifter.info/npm/egifter-npm"
+  },
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
+    "clean": "npm run gulp clean",
+    "build": "npm run gulp build",
+    "watch": "npm run gulp watch",
+    "prepack": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

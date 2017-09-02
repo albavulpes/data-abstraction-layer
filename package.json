@@ -1,15 +1,16 @@
 {
-  "name": "@egifter/egapi",
-  "version": "0.2.1",
-  "author": "eGifter",
-  "description": "ts integration logic around eGAPI project",
-  "homepage": "https://github.com/eGifter/eg-ts-modules#readme",
+  "name": "@albavulpes/data-abstraction-layer",
+  "description": "Data Abstraction Layer for Alba Vulpes API",
+  "version": "0.0.0",
+  "private": true,
+  "copyright": "Copyright © 2017",
+  "author": {
+    "name": "cypherix93",
+    "url": "https://github.com/cypherix93"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eGifter/eg-ts-modules.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eGifter/eg-ts-modules/issues"
+    "url": "git+https://github.com/albavulpes/data-abstraction-layer.git"
   },
   "license": "UNLICENSED",
   "main": "dist/index.js",

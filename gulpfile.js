@@ -4,7 +4,6 @@ const plugins = require('gulp-load-plugins')();
 const path = require('path');
 const del = require('del');
 const runSequence = require('run-sequence');
-const merge = require('merge-stream');
 
 // Directories
 const paths = {};
@@ -29,7 +28,7 @@ gulp.task('clean', function (callback) {
 gulp.task('build', function (callback) {
     runSequence(
         'clean',
-        ['compile', 'copy-files'],
+        'compile',
         callback
     );
 });
@@ -51,26 +50,12 @@ gulp.task('compile', function () {
         .pipe(gulp.dest(compileDest));
 });
 
-gulp.task('copy-files', function () {
-    const extsToCopy = [
-        '.d.ts'
-    ];
-    
-    const filesToCopy = extsToCopy
-        .map(ext => `${paths.src}/**/*${ext}`);
-    
-    return gulp.src(filesToCopy)
-        .pipe(plugins.cached('copy_source'))
-        .pipe(plugins.debug({title: 'copied:'}))
-        .pipe(gulp.dest(paths.dist));
-});
-
 // Watch
-gulp.task('watch', ['compile', 'copy-files'], function () {
+gulp.task('watch', ['compile'], function () {
     const filesToWatch = path.join(paths.src, '**');
     
     plugins.watch(filesToWatch, () => {
-        runSequence(['compile', 'copy-files']);
+        runSequence(['compile']);
     });
 });
 

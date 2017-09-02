@@ -18,8 +18,7 @@
   "files": [
     "dist/"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^8.0.3",
     "del": "^3.0.0",
@@ -32,7 +31,6 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-typescript": "^3.1.7",
     "gulp-watch": "^4.3.11",
-    "merge-stream": "^1.0.1",
     "run-sequence": "^1.2.2",
     "tslint": "^5.1.0",
     "typescript": "^2.3.4"

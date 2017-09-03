@@ -1,25 +1,9 @@
 import {RestEndpoint} from '../base/RestEndpoint';
 import {Comic} from '../models/Comic';
-import {ModelIdentity} from '../base/Model';
+import {Route} from '../decorators/Route';
 
-export class comics extends RestEndpoint<Comic> {
-    getAll(): Promise<Comic[]> {
-        return undefined;
-    }
-
-    getSingle(id: ModelIdentity): Promise<Comic> {
-        return undefined;
-    }
-
-    create(data: Comic): Promise<Comic> {
-        return undefined;
-    }
-
-    update(id: ModelIdentity, data: Comic): Promise<Comic> {
-        return undefined;
-    }
-
-    remove(id: ModelIdentity): Promise<Comic> {
-        return undefined;
-    }
+@Route('/comics')
+export class ComicsEndpoint extends RestEndpoint<Comic> {
 }
+
+export const comics = new ComicsEndpoint();

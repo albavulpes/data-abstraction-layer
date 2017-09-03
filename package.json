@@ -1,7 +1,7 @@
 {
   "name": "@albavulpes/data-abstraction-layer",
   "description": "Data Abstraction Layer for Alba Vulpes API",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "copyright": "Copyright © 2017",
   "author": {
     "name": "cypherix93",

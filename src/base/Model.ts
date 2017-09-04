@@ -1,4 +1,4 @@
-export abstract class Model {
+export interface Model {
     Id: ModelIdentity;
 }
 

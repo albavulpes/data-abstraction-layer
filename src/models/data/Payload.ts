@@ -1,5 +1,5 @@
 export interface Payload<TData> {
     error?: Error,
-    changed: boolean,
+    changed?: boolean,
     data: TData
 }
